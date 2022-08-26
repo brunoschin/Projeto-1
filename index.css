@@ -5,10 +5,10 @@
 
 body {
     background-color: black;
-    font-family: Inter,sans-serif;
-    font-size:16;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-family: Inter, sans-serif;
+    font-size: 16;
+    font-weight: 540;
+    letter-spacing: 1px;
 }
 
 header {
@@ -18,16 +18,20 @@ header {
     align-items: center;
     background-color: white;
 }
-.hide{
+
+.hide {
     margin-top: 800px;
 }
+
 .display-none {
     display: none;
 }
-.logo{
+
+.logo {
     margin-top: 4px;
-    margin-right: 32px;
+    margin-right: 22px;
 }
+
 .header-mid-container {
     display: flex;
     margin-right: 24px;
@@ -49,7 +53,7 @@ header {
 .header-mid {
     display: flex;
     justify-content: space-between;
-    margin-right: 125px;
+    margin-right: 105px;
 }
 
 .header-mid a {
@@ -83,6 +87,67 @@ header {
     background-color: #ededed;
 }
 
+.video {
+    transform: initial;
+    width: 100%;
+
+    pointer-events: none;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+.video iframe {
+    z-index: -1;
+    width: 130%;
+    display: block;
+    border: 0;
+    height: 100vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+}
+
+.text-video-overlay {
+    margin-top: 163px;
+    margin-left: 145px;
+    color: white;
+}
+.text-video-overlay p{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.text-video-overlay h1{
+    font-size: 4rem;
+    letter-spacing: 0.25px;
+    line-height: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    width: 850px;
+    margin-top: 22px;
+}
+.text-video-overlay button {
+    height: 48px;
+    background-color: #2196F3;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 214px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.text-video-overlay button:hover {
+    background-color: #2FA3F5;
+}
 /* #disclaimer {
     position: absolute;
     bottom: 0;
