@@ -1,13 +1,16 @@
+@import url('https://rsms.me/inter/inter.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Inter, sans-serif;
+
 }
 
 body {
     background-color: black;
-    font-family: Inter, sans-serif;
     font-size: 16;
-    font-weight: 540;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -29,13 +32,14 @@ header {
 
 .logo {
     margin-top: 4px;
-    margin-right: 22px;
+    margin-right: 20px;
 }
 
 .header-mid-container {
     display: flex;
     margin-right: 24px;
     align-items: center;
+    height: 100%;
 }
 
 .header-mid-container button {
@@ -48,23 +52,188 @@ header {
     font-size: 1rem;
     font-weight: 500;
     width: 95px;
+    cursor: pointer;
 }
 
 .header-mid {
     display: flex;
     justify-content: space-between;
-    margin-right: 105px;
+    margin-right: 108px;
+    align-items: center;
+    height: 100%;
 }
 
-.header-mid a {
-    color: black;
+.header-mid .a-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-mid .a-container a {
+    color: #212121;
     text-decoration: none;
     padding: 0 20px;
+    line-height: 24px;
     background-color: #FFFFFF;
+    letter-spacing: 0.5px;
 }
 
-.header-mid a:hover {
+.a-container:hover a {
     color: #2FA3F5;
+}
+
+.header-mid .a-container .hided-content,
+.hided-content-more {
+    display: none;
+}
+
+.header-mid .a-container:hover .hided-content {
+    display: flex;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    height: 418px;
+    width: 100%;
+    padding-left: 125px;
+    padding-top: 44px;
+    background-color: rgba(250, 250, 250, 0.98);
+}
+
+.header-mid .a-container:hover .hided-content-more {
+    display: flex;
+    position: absolute;
+    top: 72px;
+    left: 950px;
+    height: 50px;
+    width: 300px;
+}
+
+.default-hided-content {
+    left: 400px;
+}
+
+.hided-content-more .content li {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+.hided-content-more .content li a {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    color: black;
+    text-decoration: none;
+    width: 300px;
+    height: 49px;
+    padding-left: 24px;
+    padding-right: 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hided-content-more .content li a:focus {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+@keyframes rotate-in-time {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.hided-content-more .content li a:focus svg {
+    animation: rotate-in-time 0.1s linear;
+    transform: rotate(180deg);
+}
+
+.hided-content-more .content li a:focus~.more-content {
+    display: block;
+}
+
+.hided-content-more .content li a svg {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.more-content {
+    display: none;
+}
+
+.more-content a {
+    border: none !important;
+}
+.more-content a:hover {
+    background-color: #81C2F4;
+}
+.hided-content .content li {
+    background-color: transparent;
+    list-style: none;
+    height: 32px;
+    width: 435px;
+}
+
+.hided-content .content li a {
+    font-weight: 500;
+    background-color: transparent;
+    letter-spacing: 0px;
+    color: #757575;
+    width: fit-content;
+}
+
+.hided-content .content li:hover a {
+    background-color: transparent;
+    color: #2196f3;
+}
+
+.hided-content .content li:hover a .a-side-hided-content,
+.hided-content .content li a:hover .a-side-hided-content {
+    display: block;
+    height: 100%;
+}
+
+.hided-content .content li:hover~.a-side-hided-content {
+    display: none;
+}
+
+
+.a-side-hided-content {
+    position: absolute;
+    top: 42px;
+    left: 565px;
+    width: 850px;
+    color: black;
+
+}
+
+.a-side-hided-content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 48px;
+    width: 850px;
+
+}
+
+.a-side-hided-content p {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: 23px;
+    width: 810px;
 }
 
 .tbuttons {
@@ -112,25 +281,27 @@ header {
 }
 
 .text-video-overlay {
-    margin-top: 163px;
+    margin-top: 162px;
     margin-left: 145px;
     color: white;
 }
-.text-video-overlay p{
+
+.text-video-overlay p {
     font-size: .875rem;
     line-height: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.5px;
 }
-.text-video-overlay h1{
+
+.text-video-overlay h1 {
     font-size: 4rem;
-    letter-spacing: 0.25px;
+    letter-spacing: 0px;
     line-height: 4.5rem;
-    font-weight: 800;
-    letter-spacing: -2.5px;
+    font-weight: 900;
     width: 850px;
-    margin-top: 22px;
+    margin-top: 25px;
 }
+
 .text-video-overlay button {
     height: 48px;
     background-color: #2196F3;
@@ -139,19 +310,20 @@ header {
     border-radius: 4px;
     border: none;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     width: 214px;
-    margin-top: 35px;
+    margin-top: 32px;
     cursor: pointer;
 }
 
 .text-video-overlay button:hover {
-    background-color: #2FA3F5;
+    background-color: #309df4;
 }
-/* #disclaimer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    background-color: #F5F5F5;
-} */
+
+li.design a {
+    display: none;
+}
+
+li.design:hover a {
+    display: block;
+}
