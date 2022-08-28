@@ -8,7 +8,6 @@
 }
 
 body {
-    background-color: black;
     font-size: 16;
     font-weight: 400;
     letter-spacing: 1px;
@@ -20,10 +19,6 @@ header {
     justify-content: center;
     align-items: center;
     background-color: white;
-}
-
-.hide {
-    margin-top: 800px;
 }
 
 .display-none {
@@ -175,9 +170,11 @@ header {
 .more-content a {
     border: none !important;
 }
+
 .more-content a:hover {
     background-color: #81C2F4;
 }
+
 .hided-content .content li {
     background-color: transparent;
     list-style: none;
@@ -259,12 +256,11 @@ header {
 .video {
     transform: initial;
     width: 100%;
-
     pointer-events: none;
     height: 100%;
     position: absolute;
     overflow: hidden;
-    top: 0;
+    top: 5px;
 }
 
 .video iframe {
@@ -320,10 +316,192 @@ header {
     background-color: #309df4;
 }
 
-li.design a {
-    display: none;
+.section-1 {
+    margin-top: 200px;
+    margin-left: 145px;
 }
 
-li.design:hover a {
+.section-1 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    margin-bottom: 55px;
+}
+
+.section-1 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    margin: 20px 0 0 32px;
+}
+
+.section-1 p {
+    color: black;
+    width: 220px;
+    font-size: 16px;
+    font-weight: 40s0;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-left: 32px;
+    letter-spacing: 0px;
+}
+
+.section-1 .banner-container {
+    display: flex;
+    gap: 30px;
+}
+
+.section-1 .banner-container .banner {
     display: block;
+    position: relative;
+    width: 284.5px;
+    height: 654px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    ;
+}
+
+.section-1 .banner-container .banner a:nth-last-child(1) {
+    color: #2196f3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    margin-top: 90px;
+    margin-left: 32px;
+    position: absolute;
+    bottom: 32px;
+}
+
+.section-1 .banner-container .banner img {
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.section-2 {
+    display: flex;
+    width: 1230px;
+    height: 72px;
+    margin-left: 145px;
+    margin-top: 142px;
+    border-radius: 6px;
+    padding-left: 24px;
+    align-items: center;
+    background-color: #F5F5F5;
+
+}
+
+.section-2 .item-1,
+.section-2 .item-2,
+.section-2 .item-3 {
+    display: flex;
+    line-height: 20px;
+}
+
+.section-2 .item-1 {
+    margin-right: 70px;
+}
+
+.section-2 .item-2 {
+    margin-right: 45px;
+    width: 360px;
+}
+
+.section-2 .item-3 {
+    width: 365px;
+}
+
+.section-2 .item-1 img {
+    margin-right: 15px;
+    height: 16.5px;
+}
+
+.section-2 .item-2 img {
+    margin: auto;
+    margin-right: 15px;
+    height: 15px;
+}
+
+.section-2 .item-3 img {
+    margin: auto;
+    margin-right: 15px;
+    height: 12px;
+}
+
+.section-2 .item-1 p,
+.section-2 .item-2 p,
+.section-2 .item-3 p {
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.section-3 {
+    margin: 110px 144px 0px 145px;
+
+}
+
+.section-3 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    margin-bottom: 56px;
+}
+
+.section-3 .h-container {
+    display: flex;
+    width: 100%;
+    gap: 29px;
+}
+
+.section-3 .h-container .item {
+    position: relative;
+    width: 600px;
+    height: 587px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.section-3 .h-container .item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.section-3 .h-container .item h1 {
+    margin: 20px 0 0 32px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.section-3 .h-container .item p {
+    margin: 4px 32.5px 0 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000;
+}
+.section-3 .h-container .item .links {
+    position: absolute;
+    left: 31.5px;
+    bottom: 32px;
+}
+
+.section-3 .h-container .item a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #2196f3;
+    text-decoration: none;
+    margin: 0 19px 0 0;
+}
+
+.hide {
+    margin-top: 200px;
 }
