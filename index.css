@@ -880,6 +880,7 @@ section {
     margin-top: 100px;
     justify-content: space-between;
     position: relative;
+    overflow: visible;
 }
 
 @keyframes color-inverter {
@@ -1317,4 +1318,203 @@ footer .legals .disclaimer {
     bottom: 17px;
     left: 16px;
     transform: scale(1.05);
+    box-shadow: 0 1em 2em -0.5em rgb(0 0 0 / 35%);
+}
+
+@media only screen and (max-width: 425px) {
+    .a-side-hided-content {
+        display: none !important;
+    }
+
+    * {
+        max-width: 100vw;
+    }
+
+    body {
+        position: relative;
+    }
+
+    header {
+        padding: 0 0 0 4px;
+    }
+
+    header .logo {
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+
+    header .header-mid-container * {
+        display: none;
+    }
+
+    header .header-mid-container .standwich {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        width: 44px;
+        height: 100%;
+        /* background-color: rgb(0 0 0 / 35%); */
+        margin-right: 6.3rem;
+        padding: 20% 0;
+        margin-left: -2px;
+    }
+
+    header .header-mid-container .standwich .standwich-line {
+        display: block;
+        width: 45%;
+        height: 2px;
+        /* background-color: white; */
+        background-color: rgb(0 0 0 / 55%);
+        margin: auto;
+        margin-top: 1.5px;
+        margin-bottom: 1.5px;
+        border-radius: 5px;
+    }
+
+    header .header-grey-buttons {
+        margin-left: 14px;
+        gap: 8px;
+    }
+
+    header .header-grey-buttons button {
+        width: 32px;
+        height: 32px;
+    }
+
+    header .header-mid-container .standwich:hover~.header-mid {
+        display: block;
+        position: absolute;
+        color: black;
+        top: 70px;
+        left: 0;
+        overflow: auto;
+        height: 100%;
+    }
+
+    header .standwich:focus~.side-menu,
+    header .standwich:focus~.side-menu * {
+        display: block;
+    }
+
+    header .side-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0 0 0 / 55%);
+    }
+
+    header .side-menu span {
+        display: block;
+        background-color: white;
+        width: 300px;
+        height: 689px;
+        margin-top: 17%;
+        padding-top: 15px;
+        padding-left: 15px;
+        overflow: scroll;
+    }
+
+    header .side-menu a {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0;
+        color: #000;
+        text-decoration: none;
+    }
+
+    header .side-menu div {
+        padding-left: 15px;
+    }
+
+    header .side-menu div a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+        color: #000;
+        text-decoration: none;
+    }
+
+    header .side-menu .comece {
+        width: 300px;
+        height: 70px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-top: 1px solid #ddd;
+    }
+
+    header .side-menu .comece a {
+        background-color: #2196F3;
+        color: white;
+        padding: 6px 120px 6px 108px;
+        margin-right: 15px;
+        border-radius: 4px;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .text-video-overlay {
+        height: 565px;
+        background-image: url(https://unity.com/sites/default/files/styles/16_9_l_scale_width/public/2021-10/Unity_KeyArt21_07-blur.jpg?itok=4VHjBuq8);
+    }
+
+    .text-video-overlay div {
+        margin: 23px 0 0 0;
+    }
+
+    .text-video-overlay p {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+
+    }
+
+    .text-video-overlay h1 {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 56px;
+        letter-spacing: 0;
+        width: 365px;
+
+    }
+
+    .text-video-overlay button {
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    .section-1 .banner-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-4 .item-2,
+    .section-5 .item-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-7 {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    footer .row {
+        display: block !important;
+    }
+/* bugados */
+    .section-6,
+    .section-9,
+    .section-2 {
+        display: none !important;
+    }
 }
