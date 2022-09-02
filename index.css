@@ -1395,6 +1395,7 @@ footer .legals .disclaimer {
     header .standwich:focus~.side-menu,
     header .standwich:focus~.side-menu * {
         display: block;
+        z-index: 5;
     }
 
     header .side-menu {
@@ -1463,11 +1464,13 @@ footer .legals .disclaimer {
 
     .text-video-overlay {
         height: 565px;
-        background-image: url(https://unity.com/sites/default/files/styles/16_9_l_scale_width/public/2021-10/Unity_KeyArt21_07-blur.jpg?itok=4VHjBuq8);
+        position: relative;
+        overflow: hidden;
     }
 
     .text-video-overlay div {
-        margin: 23px 0 0 0;
+        margin: 0;
+        padding-top: 23px;
     }
 
     .text-video-overlay p {
@@ -1476,6 +1479,20 @@ footer .legals .disclaimer {
         line-height: 20px;
         letter-spacing: 0.5px;
 
+    }
+
+    .text-video-overlay .img {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(1.15);
+        z-index: -1;
+        background: #000 50% 50% no-repeat;
+        background-image: url("https://unity.com/sites/default/files/styles/16_9_l_scale_width/public/2021-10/Unity_KeyArt21_07-blur.jpg?itok=4VHjBuq8");
+        background-size: cover;
+        filter: brightness(0.5);
     }
 
     .text-video-overlay h1 {
@@ -1500,21 +1517,492 @@ footer .legals .disclaimer {
     .section-4 .item-2,
     .section-5 .item-2 {
         flex-wrap: wrap;
-        justify-content: center;
+        padding-left: 15px;
     }
+
+    section {
+        margin-top: 40px;
+    }
+
+    .section-1 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+    }
+
+    .section-1 h1 {
+        margin-left: 15px;
+
+    }
+
+    .section-1 .banner-container .banner:nth-child(1) {
+        height: 766.5px;
+        width: 395px;
+    }
+
+    .section-1 .banner-container .banner:nth-child(2) {
+        height: 790.5px;
+        width: 395px;
+    }
+
+    .section-1 .banner-container .banner:nth-child(3) {
+        height: 766.5px;
+        width: 395px;
+    }
+
+    .section-1 .banner-container .banner:nth-child(4) {
+        height: 790.5px;
+        width: 395px;
+    }
+
+    .section-1 .banner-container .banner p {
+        width: 340px;
+
+    }
+
+    .section-1 .banner-container .banner h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+    }
+
+    .section-2 {
+        margin-top: 165px;
+        gap: 26px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .section-2 .item-1,
+    .section-2 .item-2 {
+        margin-right: 0;
+    }
+
+    .section-3 {
+        margin-top: 200px;
+    }
+
+    .section-3 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        margin-left: 15px;
+    }
+
+    .section-3 .h-container {
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+
+    .section-3 .h-container .item {
+        width: 415px;
+        height: 530px;
+    }
+
+    .section-3 .h-container .item img {
+        width: 96.5%;
+    }
+
+    .section-3 .h-container .item h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+
+    }
+
+    .section-4 {
+        margin-top: 120px;
+    }
+
+    .section-4 .item-1 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        margin-left: 15px;
+        margin-top: 0;
+        width: 395px;
+    }
+
+    .section-4 .item-1 p {
+        padding-left: 15px;
+    }
+
+    .section-4 .item-1 a {
+        margin-left: 15px;
+    }
+
+    .section-4 .item-2 div {
+        height: 166px;
+        margin-bottom: 33px;
+    }
+
+    .section-4 .item-2 div h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+
+    }
+
+    .section-4 .item-2 div p {
+        width: 395px;
+    }
+
+    .section-5 {
+        margin-top: 138px;
+    }
+
+    .section-5 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .section-5 .item-1 {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        gap: 20px;
+    }
+
+    .section-5 a {
+        display: block;
+        position: relative;
+        width: 392px;
+        height: 157px;
+        text-decoration: none !important;
+        overflow: hidden;
+        color: white;
+        border-radius: 6.5px;
+    }
+
+    .section-5 p {
+        display: none;
+    }
+
+    .section-5 a h1 {
+        width: 350px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        margin: 0;
+    }
+
+    .section-5 .item-1 a .txt {
+        bottom: 7px;
+        left: 10px;
+    }
+
+    .section-5 a img {
+        width: 150%;
+        height: 150%;
+        margin-top: -40px;
+        margin-left: -20px;
+    }
+
+    .section-5 .item-1 .sub {
+        gap: 20px;
+
+    }
+
+    .section-5 .item-1 .sub a {
+        overflow: hidden;
+        width: 395px;
+        height: 157px;
+    }
+
+    .section-5 .item-1 .sub a img {
+        width: 150%;
+        height: 150%;
+        margin-top: -40px;
+        margin-left: -20px;
+    }
+
+    .section-5 .item-1 .sub a h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin: 0;
+        width: 375px;
+    }
+
+    .section-5 .item-2 .item img {
+        display: none;
+    }
+
+    .section-5 .item-2 .item div {
+        margin: 0;
+    }
+
+    .section-5 .item-2 h1 {
+        padding: 0;
+    }
+
+    .section-5 .item-2 p {
+        display: block;
+    }
+
+    .section-5 .item-2 .item {
+        height: 112px;
+    }
+
+    .section-5 .item-2 .item:nth-child(3) {
+        margin-top: 25px;
+    }
+
+    .section-6 .sub-container .control-1,
+    .section-6 .sub-container .control-2,
+    .section-6 .sub-container .control-3,
+    .section-6 .sub-container .controlled .item-2,
+    .section-6 .sub-container .controlled .item-3 {
+        display: none;
+
+    }
+
+    .section-6 .container .title h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0;
+        padding-left: 15px;
+    }
+
+    .section-6 .container .title p {
+        padding-left: 15px;
+        width: 395px;
+    }
+
+    .section-6 .container .title a {
+        margin-left: 15px;
+    }
+
+    .section-6 .sub-container .control-1~.controlled .item-1 .img-1 {
+        left: -18px;
+        top: -353px;
+        height: 710px;
+    }
+
+    .section-6 .sub-container .controlled {
+        margin-top: 40px;
+        padding-left: 15px;
+    }
+
+    .section-6 .sub-container .controlled .item-1 {
+        width: 395px;
+        height: 236px;
+    }
+
+    .section-6 .sub-container .controlled .item-1 h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0;
+
+    }
+
+    .section-6 .sub-container .controlled .item-1 h2 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+
+    .section-6 .sub-container .controlled .item-1 p {
+        width: 330px !important;
+    }
+
+    .selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 5px;
+        margin-top: 45px;
+    }
+
+    .selector div {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: rgb(255 255 255 / 35%);
+    }
+
+    .selector div:nth-child(1) {
+        background-color: #2196F3;
+    }
+
 
     .section-7 {
         flex-wrap: wrap-reverse;
         justify-content: center;
+        margin-top: 982px;
+        gap: 20px;
     }
 
-    footer .row {
-        display: block !important;
+    .section-7 img {
+        width: 395px;
+        height: 222px;
     }
-/* bugados */
-    .section-6,
-    .section-9,
-    .section-2 {
-        display: none !important;
+
+    .section-7 div h1 {
+        margin-top: 15px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        margin-left: 1px;
+        width: 395px;
+    }
+
+    .section-7 div p {
+        margin-left: 1px;
+        width: 395px;
+    }
+
+    .section-7 div a {
+        margin-left: 1px;
+    }
+
+    .section-8 {
+        margin-top: 72px;
+    }
+
+    .section-8 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        padding-left: 15px;
+    }
+
+    .section-8 p {
+        padding-left: 15px;
+        line-height: 22px;
+        width: 410px;
+    }
+
+    .section-8 div {
+        padding-left: 15px;
+    }
+
+    .section-8 div a img {
+        width: 90px;
+        height: 48px;
+    }
+
+    .section-9 {
+        padding: 0;
+        margin: 0 15px;
+        width: 395px;
+        height: 590px;
+        margin-top: 135px;
+        padding: 60px 0 0 40px;
+    }
+
+    .section-9 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0;
+        width: 300px;
+    }
+
+    .section-9 p {
+        width: 315px;
+    }
+
+    .section-9 a {
+        padding: 12px 56px;
+    }
+
+    footer {
+        height: 1374px;
+    }
+
+    footer .container .row {
+        display: block;
+    }
+
+    footer .container .row .languages .row {
+        display: none;
+    }
+
+    footer .container .row .languages {
+        margin-left: 15px;
+
+    }
+
+    footer .container .row .languages .lang {
+        display: flex;
+    }
+
+    footer .social {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    footer .social .row {
+        display: flex;
+        gap: 14px;
+    }
+
+    footer .languages .row .columns:nth-child(1) {
+        margin-right: 38px;
+    }
+
+    footer .languages .row .columns:nth-child(2) {
+        margin-right: 37px;
+    }
+
+    #itens {
+        display: flex;
+        flex-wrap: wrap;
+        height: 600px;
+        row-gap: 20px;
+        column-gap: 8px;
+        margin-left: 15px;
+        width: 400px;
+    }
+
+    #itens h1 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    #itens a {
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+
+    #itens .itens {
+        margin: 0;
+    }
+
+    footer .legals {
+        margin-top: 120px;
+        margin-left: 15px;
+    }
+
+    footer .disclaimer {
+        width: 395px !important;
+        margin-top: 48px !important;
     }
 }
