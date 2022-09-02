@@ -21,6 +21,10 @@ header {
     background-color: white;
 }
 
+#lang {
+    display: none;
+}
+
 .display-none {
     display: none;
 }
@@ -1823,6 +1827,10 @@ footer .legals .disclaimer {
         width: 330px !important;
     }
 
+    .section-6 {
+        margin-top: 2px;
+    }
+
     .selector {
         display: flex;
         align-items: center;
@@ -1847,7 +1855,7 @@ footer .legals .disclaimer {
     .section-7 {
         flex-wrap: wrap-reverse;
         justify-content: center;
-        margin-top: 982px;
+        margin-top: 812px;
         gap: 20px;
     }
 
@@ -1897,11 +1905,6 @@ footer .legals .disclaimer {
         padding-left: 15px;
     }
 
-    .section-8 div a img {
-        width: 90px;
-        height: 48px;
-    }
-
     .section-9 {
         padding: 0;
         margin: 0 15px;
@@ -1944,7 +1947,7 @@ footer .legals .disclaimer {
 
     }
 
-    footer .container .row .languages .lang {
+    #lang {
         display: flex;
     }
 
